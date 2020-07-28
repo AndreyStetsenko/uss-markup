@@ -45,6 +45,7 @@
     "jquery-touchswipe": "^1.6.15",
     "jquery.maskedinput": "^1.4.1",
     "jquery.scrollbar": "^0.2.11",
+    "lightbox2": "^2.11.3",
     "magnific-popup": "^1.1.0",
     "natives": "^1.1.6",
     "scut": "^1.4.0",
