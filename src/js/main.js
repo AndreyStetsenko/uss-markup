@@ -24,6 +24,7 @@ var mySwiper = new Swiper('.swiper-container', {
   // Optional parameters
   // direction: 'gorizontal',
   loop: true,
+  autoplay: true,
 
   // If we need pagination
   pagination: {
@@ -103,6 +104,15 @@ $(function(){
     })
   }
 });
+
+$(document).ready(function(){
+
+ h = $('.post-gallery-imgs').height()-25;
+ $('.post-gallery-gal--img__img').height(h);
+ console.log (h);
+
+});
+
 
 // $(function(){
 //   if ( $(window).width() < 990 ) {

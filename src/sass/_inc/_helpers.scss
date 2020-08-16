@@ -11,6 +11,9 @@ $tb-link-h: #333333;
 $light-gray: #E5E5E5;
 $dark-gray: #B5B5B5;
 $l-gray: #C4C4C4;
+$l-gray2: #F0F0F0;
+$l-gray3: #D3D3D3;
+$l-gray4: #E9E9E9;
 $d-gray: #737373;
 $d-gray2: #909090;
 $black-4: #2B2A2A;
@@ -29,6 +32,31 @@ $light-w: #FEFEFE;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.pagination {
+  margin-top: 25px;
+
+  .page-item {
+    .page-link {
+      border: none;
+      color: $uss;
+    }
+
+    &.disabled {
+      .page-link {
+        color: $l-gray;
+      }
+    }
+
+    &.active {
+      .page-link {
+        background: none;
+        color: $uss;
+        font-weight: bold;
+      }
+    }
+  }
 }
 
 // tags
