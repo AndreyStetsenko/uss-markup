@@ -5,14 +5,82 @@
 <section>
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-12">
+      <div class="col-12 col-md-9">
         <div class="main-content">
+
+          <h3 class="title-3 mb-4">Приглашаем на постоянную работу в охранную компанию USS Security</h3>
+
+          <div class="vacancies-cards">
+
+            <div class="vacancies-card">
+              <h2 class="vacancies-card--title">Менеджер по продажам</h2>
+              <div class="vacancies-card--info">
+                <p><strong>График работы:</strong> Пн - Пт, с 9:00 до 18:00;</p>
+                <p><strong>з/п:</strong> по результатам собеседования;</p>
+                <p>Опыт работы обязателен.</p>
+              </div>
+            </div>
+
+            <div class="vacancies-card">
+              <h2 class="vacancies-card--title">Охранник</h2>
+              <div class="vacancies-card--info">
+                <p><strong>График работы:</strong> дневные/суточные смены;</p>
+                <p><strong>з/п:</strong> 400 грн/смена;</p>
+                <p><strong>вахта:</strong> 15/15, 30/15;</p>
+                <p><strong>з/п:</strong> 8500 - 11000 грн;</p>
+                <p>Официальное оформление, полный соцпакет. Обучение на разряд охранника, форменная одежда за счет  компании.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <h4 class="title-4 mb-4 mt-4">Приглашаем на постоянную работу в охранную компанию USS Security</h4>
+
+          <div class="vacancies-form">
+            <form class="form form-modal vacancies-form--form">
+              <div class="inputs">
+                <div class="form-group select">
+                  <!-- <input placeholder="Вакансия" type="text" id="formVacanciesVacancy" required>
+                  <label for="formVacanciesVacancy">Интересующая Вас вакансия</label> -->
+                  <select class="form-control selectpicker" id="formVacanciesVacancy" title="Выберите вакансию">
+                    <option>Менеджер по продажам</option>
+                    <option>Охранник</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <input placeholder="Номер телефона" type="text" id="formVacanciesPhone" required>
+                  <label for="formVacanciesPhone">Контактный номер телефона</label>
+                </div>
+                <div class="form-group">
+                  <input placeholder="Ссылка на резюме" type="text" id="formVacanciesResumeLink" required>
+                  <label for="formVacanciesResumeLink">Ссылка на Ваше резюме</label>
+                </div>
+                <div class="form-group">
+                  <input class="custom-file-input" placeholder="Файл с резюме" type="file" id="formVacanciesResumeFile">
+                  <label class="custom-file-label" for="formVacanciesResumeFile">Прикрепить файл с резюме</label>
+                </div>
+                <!-- <div class="form-group">
+              		<div class="input-group input-file" name="Fichier1">
+                		<input type="text" class="form-control" placeholder='Choose a file...' />
+                		<span class="input-group-btn">
+                   			 <button class="btn btn-warning btn-reset" type="button">Reset</button>
+                		</span>
+              		</div>
+              	</div> -->
+              </div>
+              <div class="form-group form-group-textarea">
+                <textarea placeholder="Комментарий" name="name" rows="8" cols="80" id="formVacanciesComment" required></textarea>
+                <label for="formVacanciesComment">Комментарий</label>
+              </div>
+              <button type="button" name="button" class="btn btn-vac btn-gold active">Заказать</button>
+            </form>
+          </div>
 
         </div>
       </div>
-      <!-- <div class="col-12 col-md-3"> -->
-        <!-- @include('inc/sidebar.html') -->
-      <!-- </div> -->
+      <div class="col-12 col-md-3">
+        @include('inc/sidebar.html')
+      </div>
     </div>
   </div>
 </section>

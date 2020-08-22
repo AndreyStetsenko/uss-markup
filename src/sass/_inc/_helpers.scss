@@ -125,6 +125,11 @@ h1, h2, h3, h4, h5, h6 {
   color: $uss;
 }
 
+.title-4 {
+  font-weight: 300;
+  font-size: 18px;
+}
+
 // btn
 
 .btn-gold {
@@ -192,9 +197,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   &-cont {
-    padding-top: 10px;
+    // padding-top: 10px;
     font-size: 14px;
     color: $uss;
+    background: #f0f0f0;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 3px;
 
     &--link {
       text-decoration: underline;
@@ -238,7 +247,7 @@ h1, h2, h3, h4, h5, h6 {
       background: $uss;
       align-items: center;
       justify-content: center;
-      padding: 15px 35px;
+      padding: 15px 40px;
       text-align: center;
 
       .close {
@@ -323,6 +332,30 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     margin-bottom: 22px;
 
+    &.select {
+      .bootstrap-select {
+        .btn {
+          width: 100%;
+          padding: 10px 20px;
+          border: 1px solid #B0976D;
+          border-radius: 2px;
+          background: #fff;
+          font-size: 14px;
+          color: #909090;
+          font-weight: 500;
+
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+
+        .dropdown-toggle:focus, .bootstrap-select>select.mobile-device:focus+.dropdown-toggle {
+          outline: none!important;
+        }
+      }
+    }
+
     .form-noactive {
       border: none;
       padding: 0;
@@ -341,6 +374,30 @@ h1, h2, h3, h4, h5, h6 {
       }
     }
 
+    .custom-file-input {
+      &:focus {
+        ~ .custom-file-label {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+    }
+
+    .custom-file-label {
+      position: absolute;
+      top: 0px!important;
+      width: 100%;
+      height: 46px;
+      padding: 13px 20px;
+      border: 1px solid #B0976D;
+      border-radius: 2px;
+      font-size: 14px!important;
+
+      &:after {
+        display: none;
+      }
+    }
+
     label {
       position: absolute;
       top: 13px;
@@ -350,9 +407,10 @@ h1, h2, h3, h4, h5, h6 {
       font-weight: 500;
       transition: 0.2s ease all;
       opacity: 0;
+      cursor: text;
     }
 
-    input {
+    input, textarea, select {
       width: 100%;
       padding: 10px 20px;
       border: 1px solid $gold;
@@ -366,6 +424,7 @@ h1, h2, h3, h4, h5, h6 {
           left: 0;
           font-size: 12px;
           opacity: 1;
+          cursor: context-menu;
         }
 
         &::placeholder {
