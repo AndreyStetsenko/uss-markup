@@ -183,6 +183,16 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
 }
 
+.owl-item {
+  .item {
+    height: calc(100% - 50px);
+
+    .price-services-item {
+      height: 100%;
+    }
+  }
+}
+
 // Breadcrumbs
 
 .breadcrumbs {

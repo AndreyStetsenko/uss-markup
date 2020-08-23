@@ -468,6 +468,7 @@
                       <li><i class="icon fas fa-check-circle"></i>Клавиатура</li>
                       <li><i class="icon fas fa-check-circle"></i>Датчик открывания двери</li>
                       <li><i class="icon fas fa-check-circle"></i>Датчик движения</li>
+                      <li><i class="icon fas fa-check-circle"></i>Кнопка тревоги</li>
                     </ul>
                   </div>
                 </div>
@@ -533,24 +534,38 @@
       <div class="gallery-box">
         <a href="http://uss.ua/wp-content/uploads/2016/12/19884_308276_1481270874.jpg" data-toggle="lightbox" data-gallery="gallery" class="gallery-box-item">
           <img src="http://uss.ua/wp-content/uploads/2016/12/19884_308276_1481270874.jpg" class="img-fluid rounded">
+          <span>Смотреть галерею <i class="icon fas fa-arrow-circle-right"></i></span>
+          <div class="flow"></div>
         </a>
         <a href="http://uss.ua/wp-content/uploads/2016/12/19884_308459_1481284522.jpg" data-toggle="lightbox" data-gallery="gallery" class="gallery-box-item">
           <img src="http://uss.ua/wp-content/uploads/2016/12/19884_308459_1481284522.jpg" class="img-fluid rounded">
+          <span>Смотреть галерею <i class="icon fas fa-arrow-circle-right"></i></span>
+          <div class="flow"></div>
         </a>
         <a href="http://uss.ua/wp-content/uploads/2016/08/19884_308269_1481270874.jpg" data-toggle="lightbox" data-gallery="gallery" class="gallery-box-item">
           <img src="http://uss.ua/wp-content/uploads/2016/08/19884_308269_1481270874.jpg" class="img-fluid rounded">
+          <span>Смотреть галерею <i class="icon fas fa-arrow-circle-right"></i></span>
+          <div class="flow"></div>
         </a>
         <a href="http://uss.ua/wp-content/uploads/2016/12/19884_308274_1481270874.jpg" data-toggle="lightbox" data-gallery="gallery" class="gallery-box-item">
           <img src="http://uss.ua/wp-content/uploads/2016/12/19884_308274_1481270874.jpg" class="img-fluid rounded">
+          <span>Смотреть галерею <i class="icon fas fa-arrow-circle-right"></i></span>
+          <div class="flow"></div>
         </a>
         <a href="http://uss.ua/wp-content/uploads/2016/12/19884_308279_1481270874.jpg" data-toggle="lightbox" data-gallery="gallery" class="gallery-box-item">
           <img src="http://uss.ua/wp-content/uploads/2016/12/19884_308279_1481270874.jpg" class="img-fluid rounded">
+          <span>Смотреть галерею <i class="icon fas fa-arrow-circle-right"></i></span>
+          <div class="flow"></div>
         </a>
         <a href="http://uss.ua/wp-content/uploads/2016/12/19884_308287_1481270874.jpg" data-toggle="lightbox" data-gallery="gallery" class="gallery-box-item">
           <img src="http://uss.ua/wp-content/uploads/2016/12/19884_308287_1481270874.jpg" class="img-fluid rounded">
+          <span>Смотреть галерею <i class="icon fas fa-arrow-circle-right"></i></span>
+          <div class="flow"></div>
         </a>
         <a href="http://uss.ua/wp-content/uploads/2016/12/19884_308287_1481270874.jpg" data-toggle="lightbox" data-gallery="gallery" class="gallery-box-item">
           <img src="http://uss.ua/wp-content/uploads/2016/12/19884_308287_1481270874.jpg" class="img-fluid rounded">
+          <span>Смотреть галерею <i class="icon fas fa-arrow-circle-right"></i></span>
+          <div class="flow"></div>
         </a>
         <a href="#" class="gallery-box-item next">
           <img src="http://uss.ua/wp-content/uploads/2016/12/19884_308287_1481270874.jpg">
@@ -824,7 +839,14 @@
     <script src="js/main.js" charset="utf-8"></script>
 
     <script type="text/javascript">
-
+      $(function() {
+      	$('.owl-item').matchHeight({
+          byRow: true,
+          property: 'height',
+          target: null,
+          remove: false
+        });
+      });
     </script>
 
   </body>

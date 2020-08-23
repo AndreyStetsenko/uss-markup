@@ -452,7 +452,14 @@
     <script src="js/main.js" charset="utf-8"></script>
 
     <script type="text/javascript">
-
+      $(function() {
+      	$('.owl-item').matchHeight({
+          byRow: true,
+          property: 'height',
+          target: null,
+          remove: false
+        });
+      });
     </script>
 
   </body>
