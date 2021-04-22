@@ -1,0 +1,146 @@
+.breadcrumbs-cont {
+  font-weight: 500;
+
+  a {
+    color: $uss;
+    transition: .1s;
+    font-weight: 400;
+    text-decoration: none;
+
+    &:hover {
+      color: $gold;
+      text-decoration: underline;
+    }
+  }
+}
+
+.post-gallery {
+  &-gal {
+    &--img {
+      min-height: 150px;
+      height: calc(100% - 50px);
+    }
+  }
+}
+
+.gallery-list-item__body--link {
+  font-size: 14px;
+  color: #393838;
+  transition: .1s;
+
+  &:hover {
+    color: $gold;
+  }
+}
+
+.widget, footer, .about-list {
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+// Contact Form
+
+.wpcf7 {
+  .wpcf7-response-output {
+    background-color: #46b450;
+    margin: 0;
+    margin-top: 15px;
+    color: #fff;
+    font-weight: 300;
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  form {
+    width: 100%!important;
+  }
+
+  .form-group {
+
+    #subjid {
+      border: none;
+      padding: 0;
+      font-size: 18px!important;
+      color: $uss!important;
+      font-weight: 300;
+
+    }
+
+    input {
+      width: 100%;
+      height: 46px;
+      padding: 13px 20px;
+      border: 1px solid #B0976D;
+      border-radius: 2px;
+      font-size: 14px!important;
+
+      &:active, &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+
+      &::placeholder {
+        font-size: 14px;
+        color: $d-gray2;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+
+// Pagination
+
+.pagination-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+
+  a {}
+
+  .page-numbers {
+    background: $l-gray2;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2px;
+    border-radius: 2px;
+    color: $uss;
+    font-weight: 300;
+    text-decoration: none;
+    transition: .2s;
+
+    &.current {
+      font-weight: 500;
+      background: $l-gray3;
+    }
+
+    &:hover {
+      background: $l-gray3;
+    }
+
+    &.dots {
+      background: #fff;
+    }
+
+    &.next, &.prev {
+      color: $d-gray;
+    }
+  }
+}
+
+.home-services {
+  .title-main {
+    &--title {
+      padding: 20px 0;
+    }
+  }
+}

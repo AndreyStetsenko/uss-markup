@@ -249,8 +249,8 @@ button:focus {
   top: 0;
 
   .navbar-nav {
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 5px!important;
+    padding-bottom: 5px!important;
     transition: .2s;
 
     &.nav-min {
@@ -379,6 +379,25 @@ button:focus {
   }
 }
 
+// Banner
+
+.banner {
+  margin-top: 25px;
+  // margin-bottom: -25px;
+
+  &-img {
+    width: 100%;
+    height: 250px;
+
+    &--img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+  }
+}
+
 // Services
 
 .services-h {
@@ -449,14 +468,14 @@ button:focus {
       flex-wrap: wrap;
 
       &--title {
-        font-size: 24px;
+        font-size: 18px;
         line-height: 28px;
         color: $uss;
         margin-bottom: 10px;
       }
 
       &--text {
-        font-size: 18px;
+        font-size: 14px;
         line-height: 21px;
         color: $uss;
         margin-bottom: 20px;
@@ -465,6 +484,22 @@ button:focus {
       &--btn {
 
       }
+    }
+  }
+}
+
+.banner-services {
+  margin-top: 25px;
+
+  &-img {
+    width: 100%;
+    height: 250px;
+
+    &--img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 5px;
     }
   }
 }
@@ -508,25 +543,37 @@ button:focus {
 // Price Services
 
 .price-services {
+  margin: 0 auto;
+  max-width: 1120px;
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
 
+  .owl-carousel {
+    .owl-item {
+      padding: 0 10px;
+    }
+  }
+
   &-item {
-    width: 290px;
+    width: 100%;
     position: relative;
-    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 25px 0;
     padding: 20px 20px;
     background: #FEFEFE;
-    box-shadow: 3px 7px 20px rgba(0,0,0,0.15);
+    // box-shadow: 3px 7px 20px rgba(0,0,0,0.15);
     border-radius: 6px;
-    border: 1px solid #FEFEFE;
+    border: 1px solid $dark-gray;
     transition: .4s;
 
     &:hover {
       border: 1px solid $gold;
-      box-shadow: 3px 7px 25px rgba(0, 0, 0, 0.20);
+      // box-shadow: 3px 7px 25px rgba(0, 0, 0, 0.20);
     }
 
     &.sale {
@@ -562,7 +609,7 @@ button:focus {
 
     &--title {
       font-weight: bold;
-      font-size: 24px;
+      font-size: 18px;
       text-align: center;
       color: $uss;
       margin-bottom: 20px;
@@ -606,7 +653,7 @@ button:focus {
         margin-top: 5px;
 
         li {
-          font-size: 16px;
+          font-size: 14px;
           line-height: 21px;
           margin-bottom: 8px;
 
@@ -620,6 +667,11 @@ button:focus {
 
     &__footer {
       padding: 5px 0 0;
+      // position: absolute;
+      // margin: 0 auto;
+      // left: 0;
+      // right: 0;
+      // bottom: 10px;
     }
 
     &__price {
@@ -668,6 +720,10 @@ button:focus {
 
 // Why We
 
+.home-why {
+  padding-bottom: 0;
+}
+
 .why {
   &-cont {
     width: 100%;
@@ -703,6 +759,8 @@ button:focus {
 // Gallery
 
 .home-gallery {
+  padding-bottom: 0;
+
   &--footer {
     text-align: center;
     margin-top: 25px;
@@ -717,7 +775,7 @@ button:focus {
 
   &-item {
     width: calc(25% - 15px);
-    height: 320px;
+    height: 250px;
     margin-bottom: 25px;
     margin-right: 20px;
     position: relative;
@@ -806,6 +864,12 @@ button:focus {
 
 // Clients
 
+.home-clients {
+  .title-main--title {
+    padding-top: 5px!important;
+  }
+}
+
 .clients-box {
   display: flex;
   flex-direction: row;
@@ -843,8 +907,9 @@ button:focus {
     }
 
     &--title {
-      margin-top: 5px;
+      margin-top: 10px;
       text-align: center;
+      font-size: 14px;
     }
   }
 }
@@ -852,13 +917,18 @@ button:focus {
 // Contacts
 
 .contacts {
-  padding: 25px 0;
+  padding: 0px 0;
 
   &.contacts-form {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+
+    h3 {
+      font-weight: 300;
+      font-size: 24px;
+    }
 
     form {
       width: 80%;
@@ -870,7 +940,7 @@ button:focus {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
 
     .contacts-info-contacts {
       margin-bottom: 50px;
@@ -894,7 +964,7 @@ button:focus {
       .contacts-info--item {
         padding-bottom: 15px;
         color: $uss;
-        font-size: 18px;
+        font-size: 14px;
 
         .icon {
           margin-right: 10px;
@@ -980,17 +1050,21 @@ button:focus {
 
   &-item {
     margin-bottom: 25px;
-    background: $light-gray;
-    border-radius: 5px;
+    padding-bottom: 25px;
+    background: #fff;
+    // border-radius: 5px;
+    border-bottom: 1px solid $light-gray;
     transition: .2s;
 
-    &:hover {
-      box-shadow: 0 0 25px rgba(black, .1);
-      transform: scale(1.01);
-    }
+    // &:hover {
+    //   box-shadow: 0 0 25px rgba(black, .1);
+    //   transform: scale(1.01);
+    // }
 
     &:last-child {
       margin-bottom: 0;
+      padding-bottom: 0;
+      border: none;
     }
 
     // &:nth-child(2n) {
@@ -1023,13 +1097,14 @@ button:focus {
       img {
         width: 100%;
         height: 100%;
-        border-radius: 0 5px 5px 0;
+        border-radius: 5px;
         object-fit: cover;
+        border: 1px solid $light-gray;
       }
     }
 
     &__body {
-      padding: 35px 0px 35px 25px;
+      padding: 35px 0px 35px 0;
 
       &--title {
         font-size: 18px;
@@ -1207,9 +1282,9 @@ button:focus {
 
     &--title {
       font-weight: 300;
-      font-size: 24px;
+      font-size: 18px;
       color: $uss;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
 
     &--info {
@@ -1267,7 +1342,7 @@ button:focus {
 
 .about {
   &-title {
-    text-align: center;
+    text-align: left;
     margin-top: 50px;
   }
 
@@ -1386,6 +1461,7 @@ button:focus {
 
   &-values {
     &__list {
+      margin-top: 25px!important;
       background: $l-gray2;
       padding: 15px;
       border-radius: 10px;
@@ -1448,14 +1524,24 @@ button:focus {
       display: flex;
       justify-content: space-between;
       flex-direction: row;
-      flex-wrap: wrap;
+      // flex-wrap: wrap;
 
       &--item {
-        max-width: 30%;
+        margin-left: 25px;
+        margin-right: 25px;
+        width: 100%;
         border: 1px solid $gold;
         border-radius: 5px;
         padding: 15px;
         text-align: center;
+
+        &:first-child {
+          margin-left: 0px;
+        }
+
+        &:last-child {
+          margin-right: 0px;
+        }
       }
 
       &--img {
@@ -1467,6 +1553,8 @@ button:focus {
 
         img {
           width: 100%;
+          height: 100%;
+          object-fit: contain;
         }
       }
 
@@ -1497,7 +1585,7 @@ button:focus {
 
 .sidebar {
   position: sticky;
-  top: 75px;
+  top: 100px;
   // position: sticky;
 }
 
@@ -1535,31 +1623,30 @@ button:focus {
     padding-bottom: 0;
   }
 
-  &_nav_menu {
-    .menu-main-container {
-      padding: 25px 20px;
-      background: $l-gray2;
-      border-radius: 3px;
+  .widget-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: $uss;
+  }
 
-      .widget-title {
-        font-size: 24px;
-        margin-bottom: 10px;
-        color: $uss;
-      }
+  &.widget_nav_menu {
+    padding: 25px 20px;
+    background: $l-gray2;
+    border-radius: 3px;
 
-      .menu {
-        li {
+    .menu {
+      li {
+        padding: 3px 0;
+
+        a {
+          color: $uss;
+          text-decoration: none;
+          font-size: 14px;
           padding: 3px 0;
+          transition: .2s;
 
-          a {
-            color: $uss;
-            text-decoration: none;
-            padding: 3px 0;
-            transition: .2s;
-
-            &:hover {
-              padding-left: 3px;
-            }
+          &:hover {
+            padding-left: 3px;
           }
         }
       }
@@ -1578,7 +1665,30 @@ button:focus {
   margin-top: 25px;
 
   &-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+
+    &--tags {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      a {
+        font-size: 14px;
+        color: $uss;
+        margin-left: 5px;
+        font-weight: 300;
+        line-height: 10px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+
     &--left {
+      padding-right: 5px;
       font-weight: 500;
       font-size: 14px;
       color: $uss;
@@ -1722,7 +1832,7 @@ button:focus {
 
 footer {
   width: 100%;
-  padding: 50px 0 25px;
+  padding: 25px 0 25px;
   background-color: $uss-d;
   position: absolute;
 
@@ -1734,8 +1844,8 @@ footer {
 
       &--text {
         color: #fff;
-        font-weight: 500;
-        font-size: 24px;
+        font-weight: 300;
+        font-size: 18px;
         line-height: 28px;
       }
     }
@@ -1803,7 +1913,7 @@ footer {
       height: 100%;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-end;
       flex-direction: column;
 
       &-we {
@@ -1840,12 +1950,12 @@ footer {
 
   .footer-copyright {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 25px;
 
     span {
       color: #fff;
       font-weight: 300;
-      font-size: 16px;
+      font-size: 14px;
     }
   }
 }

@@ -40,11 +40,59 @@
     }
   }
 
+  .navbar-uss-top {
+    display: none;
+  }
+
 }
 
 @media (max-width: 991.98px) {
 
+  .navbar-uss-top {
+    width: 100%;
+    padding: 10px 25px;
+    background: $uss;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__phone {
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      &--text {
+
+      }
+    }
+
+    &__lang {
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+
+        li {
+          a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 300;
+            padding: 0 10px;
+
+            &:first-child {
+              padding-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .navbar-uss {
+    background-color: #fff!important;
+    box-shadow: 0 0 7px -2px rgba($uss, .2);
+
     &.navbar-fixed {
       position: fixed;
       width: 100%;
@@ -135,10 +183,26 @@
   .price-services {
     &-item {
       &:hover {
-        margin: 0 25px 50px 25px;
+        margin: 0 25px 50px 0;
       }
     }
   }
+
+  .banner-services {
+    &-img {
+      &--img {
+        &-mob {
+          display: none;
+        }
+      }
+    }
+  }
+
+  // .nav-min {
+  //   .navbar-nav {
+  //     padding: 0!important;
+  //   }
+  // }
 
 }
 
@@ -155,8 +219,21 @@
       color: #fff;
       font-weight: 500;
 
+      &:hover {
+        color: #fff;
+      }
+
+      &--logo {
+        color: $uss;
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 15px;
+      }
+
       img {
         width: 50px;
+        margin-right: 0;
+        margin-left: 15px;
       }
     }
   }
@@ -167,11 +244,13 @@
 
   .services-h {
     padding-top: 0;
+    padding-bottom: 0!important;
     display: flex;
     flex-direction: column-reverse;
   }
 
   .services-links {
+    margin-top: 25px;
     border: none;
 
     &__list {
@@ -210,8 +289,12 @@
         text-align: center;
         width: 100%;
 
+        &--text {
+          // text-align: left;
+        }
+
         &--btn {
-          display: none;
+          margin-bottom: 50px;
         }
       }
     }
@@ -257,13 +340,17 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 80px 25px;
 
     &-item {
-      width: 100%;
-      margin-bottom: 35px;
+      width: calc(50% - 20px);
+      height: 150px;
+      margin-bottom: 55px;
+      margin-left: 10px;
+      margin-right: 10px;
 
-      &:last-child {
-        margin: 0;
+      &--text {
+        font-size: 14px;
       }
     }
   }
@@ -327,7 +414,7 @@
   }
 
   .contacts {
-    text-align: center;
+    text-align: left;
 
     .btn {
       margin: 0 auto;
@@ -342,11 +429,11 @@
       }
 
       .row {
-        flex-direction: column-reverse;
+        // flex-direction: column-reverse;
       }
 
       &__body {
-        padding: 35px 25px;
+        padding: 35px 25px 0;
       }
 
       &__img {
@@ -363,6 +450,113 @@
     }
   }
 
+  .about-partners__list {
+    flex-direction: column;
+
+    &--item {
+      margin: 0;
+      margin-bottom: 25px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  .about-questions-accordion  {
+    .card-header button {
+      padding: 15px 40px 15px 15px;
+    }
+
+    .card-body {
+      padding: 5px 15px 10px 16px;
+    }
+  }
+
+  .home-services {
+    .title-main {
+      &--title {
+        padding: 15px!important;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .about-cont {
+    text-align: left;
+
+    .about-title {
+      // text-align: center;
+    }
+
+    .btn {
+      width: 100%;
+    }
+  }
+
+  .home-why {
+    .title-main--title {
+      font-size: 20px;
+    }
+  }
+
+  .banner {
+    > .container {
+      // padding: 0;
+    }
+  }
+
+  .breadcrumbs {
+    padding: 25px 0;
+  }
+
+  .modal-content {
+    .modal-header {
+      padding: 15px 40px 15px 25px!important;
+      text-align: left!important;
+    }
+
+    .modal-body {
+      form {
+        margin-top: 25px;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+
+  .contacts-form {
+    margin-top: 25px;
+
+    p {
+      margin: 0;
+    }
+
+    .btn {
+      width: 100%;
+    }
+  }
+
+  .banner-services {
+    &-img {
+      &--img {
+        &-desc {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .page-aboutus-sidebar {
+    display: none;
+  }
+
 }
 
 // Экстрамалые девайсы («портретные телефоны», < 576px)
@@ -375,4 +569,12 @@
     }
   }
 
+}
+
+@media (max-width: 320px) {
+  .why-cont {
+    &-item {
+      width: 100%;
+    }
+  }
 }
